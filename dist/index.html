@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Dating-profile advice and a transparent review of public Reddit comments." />
+  <title>Profile Signal — what dating profiles get wrong</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="Profile Signal home"><span class="brand-mark">PS</span><span>Profile Signal</span></a>
+    <nav aria-label="Primary"><a href="#patterns">Patterns</a><a href="#playbook">Playbook</a><a href="#method">Method</a></nav>
+    <a class="quiet-button" href="#checklist">Build my checklist <span>↗</span></a>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="eyebrow"><span class="pulse"></span> Community intelligence · dating profiles</div>
+      <h1>What’s wrong with<br><em>my profile?</em></h1>
+      <p class="hero-copy">Explore practical profile advice alongside a transparent review of comments from r/Bumble, r/hingeapp, and r/Tinder.</p>
+      <div class="hero-actions"><a class="primary-button" href="#patterns">See the patterns <span>↓</span></a><button class="text-button" id="randomTip">Give me one quick win</button></div>
+      <div class="tip-pop" id="tipPop" role="status" aria-live="polite"></div>
+      <div class="hero-note"><span>01</span><p><strong>Try this:</strong> Check whether your profile is clear, varied, and easy to respond to.</p></div>
+    </section>
+
+    <section class="dashboard" id="patterns">
+      <div class="section-intro">
+        <div><span class="kicker">THE EVIDENCE BOARD</span><h2>What did reviewers mention?</h2></div>
+        <p>Counts come from manually coded comments in a small, recent sample. They do not measure how common a problem is across all profiles.</p>
+      </div>
+
+      <div class="filters" role="group" aria-label="Filter insights by subreddit">
+        <button class="filter active" data-filter="all">All communities</button>
+        <button class="filter" data-filter="bumble"><span class="dot bumble"></span>r/Bumble</button>
+        <button class="filter" data-filter="hinge"><span class="dot hinge"></span>r/hingeapp</button>
+        <button class="filter" data-filter="tinder"><span class="dot tinder"></span>r/Tinder</button>
+      </div>
+
+      <div class="insight-layout">
+        <div class="signal-chart" aria-label="Relative strength of recurring feedback themes">
+          <div class="chart-head"><span>Coded theme</span><span>Threads</span></div>
+          <p id="evidenceStatus" role="status">Loading reviewed evidence…</p>
+          <div id="bars"></div>
+        </div>
+        <article class="spotlight" id="spotlight">Loading reviewed evidence…</article>
+      </div>
+    </section>
+
+    <section class="truths">
+      <div class="truth-title"><span class="kicker">ILLUSTRATIVE EXAMPLES</span><h2>Translate the feedback.</h2></div>
+      <div class="translation-grid">
+        <div class="quote-card"><p class="quote">“Your prompts are generic.”</p><div class="arrow">→</div><p class="meaning">Give someone a specific thread they can pick up.</p><span class="example">“I love travel” → “Ask me about missing the last ferry in Split.”</span></div>
+        <div class="quote-card"><p class="quote">“Show more personality.”</p><div class="arrow">→</div><p class="meaning">Show evidence, not a list of adjectives.</p><span class="example">“Adventurous” → a candid from your Sunday climbing ritual.</span></div>
+        <div class="quote-card"><p class="quote">“Get better photos.”</p><div class="arrow">→</div><p class="meaning">Build a varied visual story, not six versions of one moment.</p><span class="example">Portrait · full body · social · hobby · dressed up · wildcard.</span></div>
+      </div>
+    </section>
+
+    <section class="playbook" id="playbook">
+      <div class="section-intro light"><div><span class="kicker">THE 15-MINUTE PROFILE FIX</span><h2>Turn critique into edits.</h2></div><p>A practical order of operations, starting with changes most likely to improve the whole profile.</p></div>
+      <div class="steps" id="checklist">
+        <label class="step"><input type="checkbox"><span class="check"></span><span class="step-no">01</span><div><h3>Audit the opener</h3><p>Can a stranger identify you instantly? Is your face unobstructed? Would you use this photo for a friendly introduction?</p></div><span class="time">3 min</span></label>
+        <label class="step"><input type="checkbox"><span class="check"></span><span class="step-no">02</span><div><h3>Remove the weakest duplicate</h3><p>If two photos communicate the same thing, keep the stronger one. Every slot should reveal new information.</p></div><span class="time">2 min</span></label>
+        <label class="step"><input type="checkbox"><span class="check"></span><span class="step-no">03</span><div><h3>Rewrite one prompt as a hook</h3><p>Trade a broad claim for a specific detail, tiny story, playful choice, or question that invites an easy reply.</p></div><span class="time">5 min</span></label>
+        <label class="step"><input type="checkbox"><span class="check"></span><span class="step-no">04</span><div><h3>Check the complete story</h3><p>Could someone tell what spending a Saturday with you feels like—and what kind of connection you want?</p></div><span class="time">5 min</span></label>
+      </div>
+      <div class="progress-wrap"><div><span>Your progress</span><strong id="progressText">0 of 4</strong></div><div class="progress"><i id="progressBar"></i></div></div>
+    </section>
+
+    <section class="method" id="method">
+      <div><span class="kicker">READ THIS CORRECTLY</span><h2>Direction, not a verdict.</h2></div>
+      <div class="method-copy"><p>The chart counts distinct discussion threads with at least one manually coded, top-level advice comment. Candidate threads come from recent searches for “profile review” and “profile feedback” in three communities. Read the linked comments to inspect the evidence. Search ranking and manual coding can introduce bias.</p><p>This is a convenience sample, not a complete scrape or a measure of what everyone finds attractive. The checklist and examples are editorial suggestions. Test one change at a time.</p></div>
+      <div class="sources"><span>Source communities</span><a href="https://www.reddit.com/r/Bumble/" target="_blank" rel="noreferrer">r/Bumble ↗</a><a href="https://www.reddit.com/r/hingeapp/" target="_blank" rel="noreferrer">r/hingeapp ↗</a><a href="https://www.reddit.com/r/Tinder/" target="_blank" rel="noreferrer">r/Tinder ↗</a></div>
+    </section>
+  </main>
+  <footer><a class="brand" href="#top"><span class="brand-mark">PS</span><span>Profile Signal</span></a><p>Built to make internet advice a little more useful.</p><span>Evidence updates when a reviewed sample is published</span></footer>
+  <script src="app.js"></script>
+</body>
+</html>
